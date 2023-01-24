@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Construction Websites </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <style src='https://kit.fontawesome.com/a076d05399.js'></style>
+
+</head>
+
+<body>
+    <section class="header" id="home">
+        <nav>
+            <a href="index.html" style="padding-right:40px"> <img src="img/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    
+                    <li><a href="#gallery">GALLERY</a></li>
+                    <li><a href="#services">SERVICES</a></li>
+                    <li><a href="emailTest.html">BOOKING</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1 style="color: white;">Ambiant The Infiniti</h1>
+            <p>
+                The infiniti is designed to be an urban oasis amidst a bustling neighbourhood. It is designed to act as a cocoon
+                that nourishes, protects, enriches and raises the quality of life for you and your family. While every
+                convenience is just a stone’s throw away from this elevated lifestyle, you are still well-protected from everyday
+                hassels and irritants like air pollution, niose pollution, etc. The infiniti provides you with ample greens, open
+                spaces, and leisure facilities to relax and rejuvenate with your whole family, be it elderly parents, children of all
+                ages or visiting friends and family.
+            </p>
+            
+            <p class="spini">
+                Uttarahalli Bangalore<br>
+Near Vaibhavi Theatre<br>
+2,3 BHK Apartment/Flat from 71.5 Lakhs<br>
+Launch Date 01 Apr 2018<br>
+Expected Possession 30 Apr 2022<br>
+
+            </p>
+            <a href="" class="hero-btn">Visit Us to Know More</a>
+            <a href="img/Brochure.pdf" class="dwn-btn">Download Brochure</a>
+        </div>
+
+    </section>
+
+    <!-- ------------------  Project --------------------------------- -->
+
+    <!-- <section name="Maps" id="prji">
+        <div class="prjc">
+            <h1>MAPS</h1>
+            <div class="slideshow-cont">
+
+                <div class="mySlides fa">
+                    <div class="numbertext">1 / 5</div>
+                    <img src="img/gallery-1.webp" style="width:100%">
+                    
+                </div>
+
+                <div class="mySlides fa">
+                    <div class="numbertext">2 / 5</div>
+                    <img src="img/gallery-2.webp" style="width:100%">
+                    
+                </div>
+
+                <div class="mySlides fa">
+                    <div class="numbertext">3 / 5</div>
+                    <img src="img/gallery-6.webp" style="width:100%">
+                   
+                </div>
+                <div class="mySlides fa">
+                    <div class="numbertext">4 / 5</div>
+                    <img src="img/gallery-4.webp" style="width:100%">
+                   
+                </div>
+                <div class="mySlides fa">
+                    <div class="numbertext">5 / 5</div>
+                    <img src="img/gallery-5.webp" style="width:100%">
+                   
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            </div>
+            <br>
+
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+
+            </div>
+        </div>
+        <script>
+            
+            var slideIndexP = 1;
+            showSlides(slideIndexP);
+
+            function plusSlides(n) 
+            {
+                showSlides(slideIndexP += n);
+            }
+
+            function currentSlide(n) 
+            {
+                showSlides(slideIndexP = n);
+            }
+
+            function showSlides(n) 
+            {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                if (n > slides.length) { slideIndexP = 1 }
+                if (n < 1) { slideIndexP = slides.length }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndexP - 1].style.display = "block";
+                dots[slideIndexP - 1].className += " active";
+            }
+        </script>
+    </section> -->
+
+
+
+    <!-- javascript of toggle Menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+
+    <!-----------------Gallery ----------------------------------------------->
+
+    <section name="gallery" id="gallery">
+        <div class="gallerys">
+            <h1>GALLERY</h1>
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 5</div>
+                    <img src="img/gallery-1.webp" style="width:100%">
+                    
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 5</div>
+                    <img src="img/gallery-2.webp" style="width:100%">
+                    
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 5</div>
+                    <img src="img/gallery-6.webp" style="width:100%">
+                   
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">4 / 5</div>
+                    <img src="img/gallery-4.webp" style="width:100%">
+                   
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">5 / 5</div>
+                    <img src="img/gallery-5.webp" style="width:100%">
+                   
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            </div>
+            <br>
+
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+
+            </div>
+        </div>
+        <script>
+            /------------------------JS for GAllERY-------------------------/
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) 
+            {
+                showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) 
+            {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) 
+            {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                if (n > slides.length) { slideIndex = 1 }
+                if (n < 1) { slideIndex = slides.length }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+            }
+        </script>
+    </section>
+    <section>
+        <p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.0136561419777!2d77.54507131479221!3d12.906843290898456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae3f8b7b739651%3A0x9f8ab3a73043b602!2sAmbiant%20The%20Infiniti!5e0!3m2!1sen!2sin!4v1674105303156!5m2!1sen!2sin" width="1500" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>  
+          </p>
+    </section>
+    <section name="gallery" id="gallery">
+        <div class="gallerys">
+            <h1>MAPS</h1>
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 5</div>
+                    <img src="img/master plan (17).webp" style="width:100%">
+                    
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 5</div>
+                    <img src="img/master plan (17).webp" style="width:100%">
+                    
+                </div>
+
+                
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            </div>
+            <br>
+
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+
+            </div>
+        </div>
+        <script>
+            /------------------------JS for GAllERY-------------------------/
+            var slideIn = 1;
+            showSlid(slideIn);
+
+            function plusSlid(m) 
+            {
+                showSlid(slideIn += m);
+            }
+
+            function currentSlid(m) 
+            {
+                showSlid(slideIn = m);
+            }
+
+            function showSlid(m) 
+            {
+                var j;
+                var slid = document.getElementsByClassName("mySlides");
+                var dotse = document.getElementsByClassName("dot");
+                if (m > slides.length) { slideIn = 1 }
+                if (m < 1) { slideIn = slid.length }
+                for (j = 0; j < slid.length; j++) {
+                    slid[j].style.display = "none";
+                }
+                for (j = 0; j < dots.length; j++) {
+                    dots[j].classNam = dotse[j].classNam.replace(" active", "");
+                }
+                slid[slideIn - 1].style.display = "block";
+                dotse[slideIn - 1].classNam += " active";
+            }
+        </script>
+    </section>
+ <!-- ---------------------  Services  --------------------------------------------- -->
+<section class="services" id="services">
+    <h1>OUR SERVICES</h1>
+    <p>We provides all kinds of projects like building, appartment, banglow,office designing etc.</p>
+
+    <div class="service-row">
+        <div class="service-column">
+            <img src="img/s-1.png">
+            <h3>Buying Home</h3>
+            <p>Real estate development is a process that involves the purchase of raw land, rezoning, construction and
+                renovation of buildings, and sale or lease of the finished product to end users.</p>
+        </div>
+
+        <div class="service-column">
+            <img src="img/s-2.png">
+            <h3>Renting Home</h3>
+            <p>Sales and marketing firms work with developers to sell the buildings and units they create.</p>
+        </div>
+
+        <div class="service-column">
+            <img src="img/s-3.png">
+            <h3>Selling Home</h3>
+            <p>A real estate brokerage is a firm that employs a team of real state agents (realtors) who help facilitate
+                a transaction between the buyers and sellers of property.</p>
+        </div>
+    </div>
+
+</section>
+
+<section>
+    <br>
+</section>
+
+
+
+<!-- ------------------Top Button-------------------------------- -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+        <i class="fa fa-chevron-up" aria-hidden="true"></i>
+    </button>
+    <script>
+        //Get the button:
+        mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() 
+        {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) 
+                {
+                    mybutton.style.display = "block";
+                } 
+            else 
+                {
+                    mybutton.style.display = "none";
+                }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() 
+        {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+    </script>   
+
+<!------------------- Site footer -------------------------------------->
+<footer>
+    <h4>About Us</h4>
+    <p class="text-justify">Real estate is a class of "real property" that includes
+        land and anything permanently attached to it, <br> whether
+        natural or man-made. You can invest in real estate
+        directly by purchasing a home, rental <br> property or other
+        property, or indirectly through Ambiant The Infiniti
+    </p>
+   
+    
+    <hr>
+   
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-sm-6 col-xs-12">
+                <p class="copyright-text">Copyright &copy; 2023 All Rights Reserved. 
+                    <br> Made with ❤️ by Bhanu Bindal.
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+
+
+</html>
